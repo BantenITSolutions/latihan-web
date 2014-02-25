@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Flat UI Free 2.1.3
 =======
 
@@ -139,3 +140,9 @@ Facebook: [http://www.facebook.com/designmodo](http://www.facebook.com/designmod
 RSS: [http://feeds.feedburner.com/designmodo](http://feeds.feedburner.com/designmodo)
 
 Google+: [https://www.google.com/+DesignModo](https://www.google.com/+DesignModo)
+=======
+latihan-web
+===========
+
+Latihan Web Design
+>>>>>>> 312604f4232701d4f72494b296325a7ce91f81be
