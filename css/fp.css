@@ -1,0 +1,607 @@
+/*
+Theme Name: Small Notes
+Theme URI: http://www.nurulimam.com/
+Author: Nurul Imam
+Author URI: http://www.nurulimam.com/
+Description: Just a show title post, about page, & contact form with minimalist design. This style required @font-face. Load Unique & Goudy Font to completed used this style. Load Tooltips & JQuery Framework to activated Tolltips Featured.
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}:focus{outline:1px}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{border:0;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-trough;color:#c93030}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #333;margin:1em 0;padding:0}input,select{vertical-align:middle}::-moz-selection{background-color:#fcf;color:#333}::selection{background-color:#a8d1ff;color:#000}.clear{clear:both;height:0.001em;margin:0px;padding:0px;display:block}a img{border:none}
+
+.progress .progress-bar.six-sec-ease-in-out {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -ms-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+}.progress .progress-bar.six-sec-ease-in-out {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -ms-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+}
+.progress {
+  position: relative;
+}
+
+.progress .progress-bar {
+  position: absolute;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.progress .progressbar-back-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.progress .progressbar-front-text {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.progress.right .progress-bar {
+  right: 0;
+}
+
+.progress.right .progressbar-front-text {
+  position: absolute;
+  right: 0;
+}
+
+.progress.vertical {
+  float: left;
+  width: 20px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.progress.vertical.bottom {
+  position: relative;
+}
+
+.progress.vertical.bottom .progressbar-front-text {
+  position: absolute;
+  bottom: 0;
+}
+
+.progress.vertical .progress-bar {
+  width: 100%;
+  height: 0;
+  -webkit-transition: height 0.6s ease;
+          transition: height 0.6s ease;
+}
+
+.progress.vertical.bottom .progress-bar {
+  position: absolute;
+  bottom: 0;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+          transition: width 0.6s ease;
+}
+
+.progress-striped .progress-bar {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+
+.progress.active .progress-bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+     -moz-animation: progress-bar-stripes 2s linear infinite;
+      -ms-animation: progress-bar-stripes 2s linear infinite;
+       -o-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+
+.progress-bar-success {
+  background-color: #5cb85c;
+}
+
+.progress-striped .progress-bar-success {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-info {
+  background-color: #5bc0de;
+}
+
+.progress-striped .progress-bar-info {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-warning {
+  background-color: #f0ad4e;
+}
+
+.progress-striped .progress-bar-warning {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-danger {
+  background-color: #d9534f;
+}
+
+.progress-striped .progress-bar-danger {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v7/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v7/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v7/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #FFF;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #CCC;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #AAA;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #888;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+body{
+width:100%;
+height:100%;
+overflow:auto;
+clear:both;
+margin:0;
+padding:0;
+font-family:'Open Sans', sans-serif;
+font-size:14px;
+letter-spacing:0.03em;
+vertical-align:top;
+color:#0a0a0a;
+-webkit-font-smoothing: antialiased;
+}
+.wrapper {
+  height: 100% !important;
+  height: 100%;
+  margin: 0 auto; 
+  overflow: hidden;
+}
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+.main section  {
+  overflow: hidden;
+}
+.main section.pertama {
+  background:url(../images/b.jpg) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main section.kedua {
+  background: url(../images/t.png) repeat left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main section.ketiga {
+  background:url(../images/g.png) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main section.keempat {
+  background:#e74c3c ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main section.kelima {
+  background:#272727 ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.konten {
+  background:#333 ;
+  width: 100%;
+  float: left;
+  margin-top: 280px;
+  padding: 40px;
+  color: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.konten h2 {
+  font: 1.8em 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+.konten p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 7px 0;
+  text-align: justify;
+  word-wrap:break-word;
+  padding-right: 100px; 
+}
+.portfolio {
+  width: 100%;
+  height: 100%;
+  background: url(../images/blog.png) no-repeat center left;
+  float: left;
+  padding: 40px;
+  color: #fff;
+}
+.keterangan {
+  width: 30%;
+  height: 197px;
+  float: right;
+  position: absolute;
+  top: 177px;
+  right: 70px;
+  padding: 2.2% 0 0 4%;
+  color: #000;
+}
+.keterangan p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-align: center;
+}
+a.menuju {
+  background:#333 ;
+  border: solid 1px #ccc;
+  float: right;
+  margin: 20px 20px 0 0;
+  padding: 9px;
+  color: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  text-decoration: none;
+}
+h2.judul {
+  font-family: 'rieslingregular';
+  font-size: 4em;
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+p.judul {
+  font-size: 1.7em;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+.blogku {
+  background-image: url(../images/stripe.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: 3px;
+  width: 45%;
+  height: 140px;
+  display: inline;
+  margin: 3% 1% 1% 1%;
+  float: left;
+  padding: 5px 0 5px 25px;
+  color: #fff;
+}
+.blogku h2 {
+  font-size: 1.8em;
+  font-family: 'rieslingregular';
+  color: #000;
+  text-transform: capitalize;
+  margin: 0 0 10px 0;
+}
+.blogku p {
+  color: #111;
+  line-height: 1.3em;
+}
+
+.penuh {
+  width: 100%;
+  margin: 0;
+}
+.kontakku {
+  background-image: url(../images/stripe.png);
+  background-position: left;
+  background-repeat: repeat-y;
+  background-clip: border-box;
+  background-size: 3px;
+  width: 46%;
+  display: inline;
+  margin: 1%;
+  float: left;
+  padding: 5px 0 5px 25px;
+  color: #fff;
+}
+h3.judul {
+  font-size: 2.8em;
+  font-family: 'rieslingregular';
+  color: #ddd;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 80px 0 10px 0;
+}
+.kontakku p, #contact p {
+  color: #ddd;
+  line-height: 1.3em;
+  padding-right: 20px;
+}
+
+#contact{
+width:46%;
+float: right;
+margin: 1%;
+}
+#contact-form input, textarea{
+border:2px solid #fcf;
+margin-bottom:18px;
+font:italic 14px/18px "Palatino Linotype",Palatino,"Zapf Calligraphic","Book Antiqua",Georgia,Times,Serif;
+color:#a9a9a9;
+}
+#contact-form input{
+height:30px
+}
+#contact-form textarea{
+width:90%;
+height:125px;
+padding:15px;
+}
+#contact-form #name{
+width:90%;
+padding:5px 15px;
+}
+#contact-form #email{
+width:90%;
+padding:5px 15px;
+}
+#contact-form #submit{
+font-size:14px;
+text-transform:capitalize;
+color: #fff;
+background: transparent;
+border:1px solid #fff;
+float: right;
+margin-right: 25px;
+}
+#contact-form #submit:hover{
+cursor:pointer;
+}
+
+.copy {
+  width: 100%;
+  background: #000;
+  height: 36px;
+  position: absolute;
+  bottom: 0;
+  clear: both;
+}
+span.kiri, span.kanan {
+  color: #fff;
+  padding: 10px 20px;
+}
+span.kiri {
+  text-align: left;
+  float: left;
+  display: inline;
+}
+span.kanan {
+  text-align: right;
+  float: right;
+  display: inline;
+}
+/** Menu Navigation **/
+.hape {
+display:none;
+}
+.menu {
+list-style:none;
+margin:0;
+padding:0;
+background:#fff;
+position: fixed;
+right: 0;
+left: 0;
+top: 10px;
+z-index: 1030;
+float:left;
+width:100%;
+border-bottom: solid 1px #ccc;
+-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+.menu:before {
+content: " ";
+background:url(../images/stripes.png) 50% 0 repeat-x;
+height: 10px;
+width: 100%;
+clear: both;
+position: fixed;
+right: 0;
+left: 0;
+top: 0;
+z-index: 1030;
+}
+.logo {
+  font-family: 'rieslingregular';
+  font-size: 1.6em;
+  margin: 7px 20px;
+  padding: auto 20px;
+  float: left;
+  display: inline-block;
+}
+.logo a {
+  text-decoration: none;
+  color: #333;
+}
+.nurulimam {
+  font-style: italic;
+  text-decoration: underline;
+}
+.menu ul{
+padding:0;
+float:right
+}
+.menu li{
+float:left;
+display:block;
+padding:0;
+margin:0
+}
+.menu li a{
+color:#555;
+text-transform: uppercase;
+text-decoration:none;
+display:block;
+font-weight:normal;
+font: 13px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+padding:20px 15px;
+border-left: solid 1px #ccc;
+margin:0px
+}
+.menu li a:hover, .menu li a:hover span{
+-webkit-transition-duration:0.8s;
+-moz-transition-duration:0.8s;
+-o-transition-duration:0.8s;
+transition-duration:0.8s;
+background:#FAFAFA;
+color:#333!important;
+}
+.menu ul ul {
+display: none;
+margin: 0;
+position: absolute;
+width: 188px;
+z-index: 99999;
+}
+.menu ul ul a {
+background:#979595;
+color:#555!important;
+text-shadow: 0 0 3px #fff;
+height: auto;
+padding: 10px 10px;
+width: 100px;
+opacity:0.9;
+}
+.menu ul ul a:hover {
+background:#8d8b8b;
+}
+.menu ul li:hover > ul {
+display: block;
+}
+* html .menu li a:hover{
+background:#000;
+color:#fff
+}
